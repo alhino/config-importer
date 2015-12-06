@@ -1,0 +1,24 @@
+{
+  "Deployment": {
+    "DataCenter": [
+      {"name": "dc1", "description": "dc1 desc", "comment": "dc1 comment",
+       "Host": [
+          {"name": "el71-host01", "description": "host desc", "address": "el71-host01.usersys.redhat.com",
+           "Authentication": {
+              "username": "root", "password": "qum5net"
+           },
+           "StorageDomains": [
+              {"type": "nfs",
+               "name": "nfs-data01",
+               "description": "sd desc",
+               "comment": "sd comment",
+               "domainFunction": "data",
+               "address": "multipass.eng.lab.tlv.redhat.com",
+               "exportPath": "/export/images/rnd/ahino/domains/data-01"}
+           ]
+          }
+       ]
+      }
+    ]
+  }
+}

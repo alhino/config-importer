@@ -1,0 +1,40 @@
+<Deployment engineUrl="http://localhost:8080/ovirt-engine/api" admin="admin@internal" password="a">
+    <!--
+    <DataCenter name="my-dc1"
+                description="desc"
+                comment="comment"
+                compatibilityVersion="3.6"/>
+
+    <Cluster name="my-clstr1"
+             description="cluster desc"
+             comment="cluster comment"
+             datacenter="my-dc1">
+
+        <General>
+            <CpuArchitecture>x86_64</CpuArchitecture>
+            <CpuType>Intel Penryn Family</CpuType>
+        </General>
+    </Cluster>
+
+    <Host name="el71-host01"
+          description="host desc"
+          address="el71-host01.usersys.redhat.com"
+          cluster="my-clstr1">
+
+        <Authentication username="root" password="qum5net" />
+    </Host>
+    -->
+
+    <StorageDomain type="nfs"
+                   name="nfs-data05"
+                   description="desc"
+                   comment="comment"
+                   domainFunction="data"
+                   server="multipass.eng.lab.tlv.redhat.com"
+                   exportPath="/export/images/rnd/ahino/domains/data-05"
+                   host="el71-host03"
+                   datacenter="dc34"
+                   format="V1"/>
+    <!--StotageDomain type="iscsi" name="" description="" comment="" domainFunction=""/>
+    <StotageDomain type="glusterfs" name="" description="" comment="" domainFunction="" path="" /-->
+</Deployment>
